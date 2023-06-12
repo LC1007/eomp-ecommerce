@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+    scroll-margin-top: 2rem;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.intro{
+    background:  linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://i.postimg.cc/5NWmYVY5/jason-blackeye-XYrjl3j7smo-unsplash.jpg) center no-repeat;
+    object-fit: cover;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
