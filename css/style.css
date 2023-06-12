@@ -23,3 +23,7 @@ img{
     align-items: center;
     background-size: cover;
 }
+
+#custom-container{
+    min-height: 100dvh;
+}
