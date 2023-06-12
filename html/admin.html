@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Drone World</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./checkout.html">Checkout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#admin">Admin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="intro text-white">
+        <h1 class="display-1 fw-bold">Take To The Sky</h1>
+        <i class="bi bi-cloud-upload display-6 mb-4"></i>
+        <a href="./product.html"><button class="btn btn-primary">View Products</button></a>
+      </div>
+    </header>
+
+    <!-- Admin Section -->
+
+    <div class="container" id="custom-container">
+      <h2 class="my-5" id="admin">Admin Table</h2>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary mb-5"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Add Product
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Modal title
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+                <form class="form">
+                    <div class="mb-3">
+                        <label for="title-input" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title-input">
+                      </div>
+                      <div class="mb-3">
+                        <label for="desc-input" class="form-label">Description</label>
+                        <textarea class="form-control" id="desc-input" rows="3"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="price-input" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="price-input">
+                      </div>
+                      <div class="mb-3">
+                        <label for="image-input" class="form-label">Image</label>
+                        <input type="url" class="form-control" id="image-input">
+                      </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Add Product
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive">
+          <table class="table table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+                <tr>
+                    <td>1</td>
+                    <td>DJI Drone 5</td>
+                    <td>The only drone you need</td>
+                    <td>R6000</td>
+                    <td><img src="https://i.postimg.cc/dVhSyNJd/josh-sorenson-ouuigywb-Xl-I-unsplash.jpg" id="custom-img" alt=""></td>
+                    <td>
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-primary">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>DJI Drone 7</td>
+                    <td>The only drone you need</td>
+                    <td>R10000</td>
+                    <td><img src="https://i.postimg.cc/dVhSyNJd/josh-sorenson-ouuigywb-Xl-I-unsplash.jpg" id="custom-img" alt=""></td>
+                    <td>
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-primary">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="py-3 bg-black">
+      <ul class="nav justify-content-center pb-3 mb-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Checkout</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-white">Admin</a>
+        </li>
+      </ul>
+      <p class="text-center text-white">&copy; 2023 Justin Scholtz, Inc</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script/admin.js"></script>
+  </body>
+</html>
