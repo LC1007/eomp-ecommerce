@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#aboutUs">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#contactUs">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./html/product.html">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/checkout.html">Checkout</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./html/admin.html">Admin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+          <div class="intro text-white">
+            <h1 class="display-1 fw-bold">Take To The Sky</h1>
+            <button class="btn btn-primary">View Products</button>
+          </div>
+    </header>
+
+    
+    
+    <div class="container">
+        <!-- About Section -->
+      <div class="row m-5" id="aboutUs">
+        <div class="col-sm-12 col-md-6 mb-3">
+            <img src="https://i.postimg.cc/sXbDrpDz/pexels-flo-dnd-2100075.jpg" alt="" class="w-75">
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h2 class="display-5 text-uppercase">About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illum autem laborum dolores quidem nihil qui fugiat mollitia et nulla ad hic, totam odit error assumenda ratione voluptate. Ad ipsam cum ipsum soluta rerum tempore dolorum deleniti dicta voluptates ex iste, voluptatibus natus dolor minima laborum unde voluptatum repudiandae magni provident reprehenderit cumque esse. Sit officia libero eligendi, alias vitae dolorem optio doloremque aliquam voluptatibus adipisci consequatur omnis autem repellat. Vero maiores nobis, laudantium aut, debitis consequuntur adipisci fugit voluptatem, corporis modi alias nemo repellendus porro natus. At excepturi velit doloremque? Nesciunt, aut. Amet, quo id. Rem natus quae dolores?</p>
+        </div>
+      </div>
+
+      <!-- Contact Us Section -->
+
+      <form class="form m-5" id="contactUs" action="https://formspree.io/f/xayzkqly" method="post">
+          <h2 class="text-center display-5 text-uppercase">Contact Us</h2>
+        <div class="mb-3">
+            <label for="name-input" class="form-label">Name</label>
+            <input type="name" class="form-control border-1 border-black" id="name-input" aria-describedby="emailHelp">
+          </div>
+        <div class="mb-3">
+          <label for="email-input" class="form-label">Email address</label>
+          <input type="email" class="form-control border-1 border-black" id="email-input" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="message-input" class="form-label">Message</label>
+            <textarea class="form-control border-1 border-black" id="message-input" rows="3"></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+    <footer class="py-3  bg-black">
+      <ul class="nav justify-content-center pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Products</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Checkout</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Admin</a></li>
+      </ul>
+      <p class="text-center text-white">&copy; 2023 Justin Scholtz, Inc</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./script/code.js"></script>
+</body>
+</html>
