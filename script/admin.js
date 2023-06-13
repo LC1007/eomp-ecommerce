@@ -11,7 +11,7 @@ let description = document.querySelector('#desc-input')
 let price = document.querySelector('#price-input')
 let img = document.querySelector('#image-input')
 let msg = document.querySelector('.error-msg')
-let delBtn = document.querySelector('#delDroneBtn')
+let delBtn;
 
 
 

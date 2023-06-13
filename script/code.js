@@ -23,6 +23,7 @@ localStorage.setItem('droneArr', JSON.stringify([{
 
 // Get the section where the product cards will be placed
 let droneDisplayCards = document.querySelector('#droneDisplayCards')
+let checkoutArr = []
 
 droneDisplayCards.innerHTML = ''
 
@@ -34,9 +35,20 @@ droneArr.forEach((droneData) =>{
     <div class="card-body">
         <h5 class="card-title">${droneData.title}</h5>
         <p class="card-text">${droneData.description}</p>
-        <a href="#" class="btn btn-primary">Buy Now</a>
+        <p class="card-text">R${droneData.price}</p>
+        <button class="btn btn-primary" onclick='addToCheckout(${JSON.stringify(droneData)})'>Buy Now</button>
     </div>
     </div>
     `
 })
 
+
+function addToCheckout(droneData){
+    try {
+        checkoutArr.push(droneData)
+        localStorage.setItem('checkoutData', JSON.stringify(checkoutArr))
+    } catch (e) {
+        console.log(e);
+    }
+    console.log(checkoutArr);
+}
