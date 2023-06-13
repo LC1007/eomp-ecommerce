@@ -80,6 +80,12 @@
         Add Product
       </button>
 
+      <select class="form-select mb-5 w-25" aria-label="Default select example">
+        <option selected>Sort</option>
+        <option value="id">ID</option>
+        <option value="price">Price</option>
+      </select>
+
       <!-- Modal -->
       <div
         class="modal fade"
@@ -102,22 +108,26 @@
               ></button>
             </div>
             <div class="modal-body">
-                <form class="form">
+                <form class="form" id="form">
                     <div class="mb-3">
                         <label for="title-input" class="form-label">Title</label>
                         <input type="text" class="form-control" id="title-input">
+                        <p style="color: red;" class="error-msg"></p>
                       </div>
                       <div class="mb-3">
                         <label for="desc-input" class="form-label">Description</label>
                         <textarea class="form-control" id="desc-input" rows="3"></textarea>
+                        <p style="color: red;" class="error-msg"></p>
                       </div>
                       <div class="mb-3">
                         <label for="price-input" class="form-label">Price</label>
                         <input type="number" class="form-control" id="price-input">
+                        <p style="color: red;" class="error-msg"></p>
                       </div>
                       <div class="mb-3">
                         <label for="image-input" class="form-label">Image</label>
                         <input type="url" class="form-control" id="image-input">
+                        <p style="color: red;" class="error-msg"></p>
                       </div>
                 </form>
             </div>
