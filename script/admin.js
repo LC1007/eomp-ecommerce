@@ -2,7 +2,6 @@ let droneArr = JSON.parse(localStorage.getItem('droneArr'))
 let tableBody = document.querySelector('#table-body')
 let addDrone = document.querySelector('#addDrone')
 
-
 function displayData(){
     try {
         tableBody.innerHTML = ''
@@ -27,12 +26,16 @@ function displayData(){
     }
 }
 
+
+
 displayData()
 
-addDrone.addEventListener('click', ()=>{
-    let title = document.querySelector('#title-input')
-    let description = document.querySelector('#desc-input')
-    let price = document.querySelector('#price-img')
-    let img = document.querySelector('#image-input')
+addDrone.addEventListener('click', (item)=>{
+    let title = document.querySelector('#title-input').value
+    let description = document.querySelector('#desc-input').value
+    let price = document.querySelector('#price-input').value
+    let img = document.querySelector('#image-input').value
+
 })
+
 
