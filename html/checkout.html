@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Drone World</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,8 @@
           </nav>
           
           <div class="intro text-white">
-            <h1 class="display-1 fw-bold">Take To The Sky</h1>
+            <h1 class="display-1 fw-bold text-uppercase">Take To The Sky</h1>
+            <i class="bi bi-cloud-upload display-6 mb-4"></i>
             <button class="btn btn-primary">View Products</button>
           </div>
     </header>
@@ -50,7 +51,7 @@
 
     <div class="container" id="custom-container">
         <h2 class="m-5">Your Cart</h2>
-        <div class="row">
+        <div class="row mb-5">
             <div class="custom-cards col-sm-12 col-md-12 col-lg-8" id="summaryCards">
                 <div class="row m-5 gap-4" id="droneDisplayCards">
                     
@@ -58,22 +59,11 @@
             </div>
             <div class="col bg-dark p-5 m-5 rounded position-relative h-100">
                 <h3 class="text-white">Summary</h3>
-                <div class="price">
-                    <div class="d-flex justify-content-between">
-                        <p class="text-white">item 1</p>
-                        <p class="text-white">R300</p>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <p class="text-white">item 1</p>
-                        <p class="text-white">R300</p>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <p class="text-white">item 1</p>
-                        <p class="text-white">R300</p>
-                    </div> 
-                    <div class="d-flex justify-content-center">
-                        <button class="btn btn-primary position-absolute bottom-0 mb-3">Proceed</button>
-                    </div>
+                <div class="price" id="price-section">                    
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="text-white">Total</p>
+                  <p class="text-white">R300000</p>
                 </div>
             </div>
         </div>

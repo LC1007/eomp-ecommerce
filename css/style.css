@@ -29,6 +29,20 @@ img{
     min-height: 100dvh;
 }
 
+.custom-img-checkout{
+    object-fit: cover;
+}
+
 #custom-img{
     width: 10rem;
 }
+
+nav{
+    z-index: 1;
+}
+
+.custom-img-product{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+  
