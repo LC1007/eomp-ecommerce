@@ -100,6 +100,7 @@ addDrone.addEventListener('click', ()=>{
         
         displayData()    
         console.log(droneArr);
+        
 })
 
 
