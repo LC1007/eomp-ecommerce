@@ -20,7 +20,7 @@ function displayData() {
         <td>${content.id}</td>
         <td>${content.title}</td>
         <td>${content.description}</td>
-        <td>R${content.price}</td>
+        <td>R${content.price}.00</td>
         <td><img src="${content.img}" id="custom-img" alt="${
         content.id
       }" loading="lazy"></td>
@@ -66,7 +66,7 @@ function displayData() {
                   <h5>Price</h5>
                   <input type="number" value="${
                     content.price
-                  }" class="form-control" id="edit-drone-price${
+                  }.00" class="form-control" id="edit-drone-price${
         content.id
       }" name="edit-drone-price">
                 </div>
