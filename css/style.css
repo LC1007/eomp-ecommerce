@@ -46,11 +46,7 @@ nav{
     object-fit: cover;
 }
 
-#cart-btn{
-    display: block;
-}
-
-@media screen and (max-with) {
-    
+#table{
+    margin-top: 6rem;
 }
   
