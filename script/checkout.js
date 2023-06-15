@@ -28,6 +28,7 @@ clearCartBtn.addEventListener('click', ()=>{
 
 
 
+
 function addTotal(){
   total.innerHTML = "R" + totalPrice
 }
