@@ -10,7 +10,7 @@ let checkoutTable = document.querySelector("#checkout-table");
 
 // Line 14 takes the value from line 7 (let totalPrice = checkoutArr.reduce((acc, curr) => {return acc + curr.price;}, 0);) which adds the prices of each element in the array into one number and then concat Total - R with the value of totalPrice which will result in eg R30000
 function addTotal() {
-  total.innerHTML = "Total - R" + totalPrice;
+  total.innerHTML = "Total - R" + totalPrice + ".00";
 }
 // This runs the function above
 addTotal();
@@ -32,14 +32,14 @@ function presentCheckout() {
         <div class="card mb-3 p-0" style="max-width: 540px;">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="${groupDrones[droneID][0].img}" class="img-fluid h-100 rounded-start custom-img-checkout" alt="${groupDrones[droneID][0].title}">
+              <img src="${groupDrones[droneID][0].img}" class="img-fluid h-100 rounded-start custom-img-checkout" alt="${groupDrones[droneID][0].title}" loading="lazy">
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">${groupDrones[droneID].length}</span>
             </div>
             <div class="col-md-8">
               <div class="card-body">
               <div class="d-sm-flex justify-content-between me-3 mb-3">
                 <h5 class="card-title">${groupDrones[droneID][0].title}</h5>
-                <h5>R${groupDrones[droneID][0].price}</h5>
+                <h5>R${groupDrones[droneID][0].price}.00</h5>
               </div>
                 <p class="card-text">${groupDrones[droneID][0].description}</p>
               </div>
@@ -54,7 +54,7 @@ function presentCheckout() {
       <tr>
           <td>${groupDrones[droneID][0].title}</td>
           <td>${groupDrones[droneID].length}</td>
-          <td>R${groupDrones[droneID][0].price}</td>
+          <td>R${groupDrones[droneID][0].price}.00</td>
       </tr>
         
   `;
