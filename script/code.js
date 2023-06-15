@@ -11,7 +11,7 @@ localStorage.setItem('droneArr', JSON.stringify([{
     id: 2,
     title: 'DJI Inspire 3',
     description: 'At the peak of aerial cinematography, DJI Inspire 3 offers unprecedented workflow efficiency, camera language, and creative freedom. This all-in-one 8K camera drone empowers professional-level filmmakers to fully maximize the potential of any shot and master the unseen.',
-    price: 9000,
+    price: 18000,
     img: 'https://i.postimg.cc/wBjTBPDn/pexels-darrel-und-1087180.jpg'
 },{
     id: 3,
@@ -46,11 +46,13 @@ function displayCheckout(){
         <div class="card p-0" style="width: 18rem;">
             <img src="${droneData.img}" class="custom-img-product" alt="..." loading="lazy">
         <div class="card-body">
-            <h5 class="card-title">${droneData.title}</h5>
+        <div class="d-flex justify-content-between me-3 mb-3">
+        <h5 class="card-title">${droneData.title}</h5>
+        <p>R${droneData.price}</p>
+        </div>
             <p class="card-text">${droneData.description}</p>
             <p class="card-text mb-5"></p>
             <button class="btn btn-primary position-absolute bottom-0 my-3" onclick='addToCheckout(${JSON.stringify(droneData)})'>Buy Now
-            <span class="badge text-bg-light">R${droneData.price}</span></button>
         </div>
         </div>
             </div>
