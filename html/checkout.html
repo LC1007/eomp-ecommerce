@@ -50,7 +50,9 @@
     <!-- Product Section -->
 
     <div class="container" id="custom-container">
-        <h2 class="m-5">Your Cart</h2>
+        <h2 class="ms-5 mt-5">Your Cart</h2>
+        <h1 class="ms-5 mt-5 h5" id="cart-msg"></h1>
+        <button class="btn btn-primary mb-4" id="cart-btn">Clear all</button>
         <div class="row mb-5">
             <div class="custom-cards col-sm-12 col-md-12 col-lg-8" id="summaryCards">
                 <div class="row m-5 gap-4" id="droneDisplayCards">
@@ -63,7 +65,7 @@
                 </div>
                 <div class="d-flex justify-content-between">
                   <p class="text-white">Total</p>
-                  <p class="text-white">R300000</p>
+                  <p class="text-white" id="total"></p>
                 </div>
             </div>
         </div>
